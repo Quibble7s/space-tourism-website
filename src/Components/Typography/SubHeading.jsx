@@ -1,32 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SubHeading = ({ text = '', type = 1, className = '' }) => {
+const SubHeading = ({ type = 1, className = '' }) => {
   switch (type) {
     case 1:
       return (
         <p className={`font-bellefair text-white md:text-[28px] ${className}`}>
-          {text}
+          {children}
         </p>
       );
     case 2:
       return (
         <p
           className={`font-barlow text-white md:text-[14px] md:tracking-[2.35px] ${className}`}>
-          {text}
+          {children}
         </p>
       );
     default:
       return (
         <p className={`font-bellefair text-white md:text-[28px] ${className}`}>
-          {text}
+          {children}
         </p>
       );
   }
 };
 
 SubHeading.propTypes = {
-  text: PropTypes.string,
+  children: PropTypes.string,
   type: PropTypes.number,
   className: PropTypes.string,
 };

@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const NavText = ({ className = '', text = '' }) => {
+const NavText = ({ className = '' }) => {
   return (
     <p
       className={`text-white font-barlow text-[16px]tracking-[2.7px] ${className}`}>
-      {text}
+      {children}
     </p>
   );
 };
 
 NavText.propTypes = {
   className: PropTypes.string,
-  text: PropTypes.string,
+  children: PropTypes.string,
 };
 
 export default NavText;
