@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SubHeading = ({ type = 1, className = '' }) => {
+const SubHeading = ({ children, type = 1, className = '' }) => {
   switch (type) {
     case 1:
       return (
