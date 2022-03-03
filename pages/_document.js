@@ -13,7 +13,7 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap'
           rel='stylesheet'></link>
       </Head>
-      <body className='bg-darkBlue'>
+      <body className='bg-darkBlue overflow-x-hidden'>
         <Main />
         <NextScript />
       </body>
