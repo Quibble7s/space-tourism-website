@@ -7,9 +7,9 @@ import Styles from '../../../styles/navbar.module.css';
 //Components
 import NavText from '../Typography/NavText';
 //Handlers
-import { onNavClickHandler } from '../Typography/Handlers/NavTextHandlers';
+import { onNavClickHandler } from './Handlers/NavLinkHandlers';
 
-const NavLink = ({ number = '', text = '', href = '', target = '' }) => {
+const NavLink = ({ number = '', text = '', href = '' }) => {
   return (
     <Link href={href}>
       <a
@@ -33,7 +33,6 @@ NavLink.propTypes = {
   number: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
-  target: PropTypes.string,
 };
 
 export default NavLink;
