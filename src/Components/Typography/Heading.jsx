@@ -34,7 +34,7 @@ const Heading = ({ children, type = 1, className = '' }) => {
     case 5:
       return (
         <h5
-          className={`font-barlow text-[16px] tracking-[2.7px] md:tracking-[4.75px] md:text-[28px] text-lightPurple ${className}`}>
+          className={`font-barlow text-[16px] tracking-[2.7px] md:tracking-[4.75px] md:text-[28px] text-light-purple ${className}`}>
           {children}
         </h5>
       );

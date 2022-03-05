@@ -10,7 +10,7 @@ module.exports = {
         md: '768px',
         lg: '1440px',
       },
-      colors: { darkBlue: '#0B0D17', lightPurple: '#D0D6F9' },
+      colors: { 'dark-blue': '#0B0D17', 'light-purple': '#D0D6F9' },
       fontFamily: {
         barlow: ['Barlow Condensed', 'sans-serif'],
         bellefair: ['Bellefair', 'serif'],
