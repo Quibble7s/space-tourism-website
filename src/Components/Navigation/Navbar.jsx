@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 //Components
 import MobileNavbar from './MobileNavbar';
-import NavbarImages from './NavbarImages';
+import NavbarImages from './MobileNavbarImages';
 
 const Navbar = ({ setNavbarActive = () => null, navbarActive = false }) => {
   return (
