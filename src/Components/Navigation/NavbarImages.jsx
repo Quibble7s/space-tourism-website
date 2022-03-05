@@ -18,11 +18,15 @@ const NavbarImages = ({
         onClick={() => {
           setNavbarActive(!navbarActive);
         }}>
-        <div className='md:hidden'>
+        <div
+          className={`md:hidden ${
+            navbarActive ? 'w-[19.09px] h-[19.09px]' : ''
+          }`}>
           <Image
             className='z-10'
             width={24}
             height={21}
+            objectFit='cover'
             src={`/assets/shared/icon-${
               navbarActive ? 'close' : 'hamburger'
             }.svg`}
