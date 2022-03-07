@@ -27,14 +27,14 @@ const Heading = ({ children, type = 1, className = '' }) => {
     case 4:
       return (
         <h4
-          className={`font-bellefair text-[20px] md:text-[32px] text-white ${className}`}>
+          className={`font-bellefair text-[20px] md:text-[32px] md:tracking-[2px] text-white ${className}`}>
           {children}
         </h4>
       );
     case 5:
       return (
         <h5
-          className={`font-barlow text-[16px] tracking-[2.7px] md:tracking-[4.75px] md:text-[28px] text-light-purple ${className}`}>
+          className={`font-barlow text-[16px] tracking-[2.7px] md:tracking-[3.38px] md:text-[20px] lg:text-[28px] text-light-purple ${className}`}>
           {children}
         </h5>
       );
