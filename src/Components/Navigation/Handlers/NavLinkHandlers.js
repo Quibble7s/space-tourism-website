@@ -7,7 +7,7 @@ export const onNavClickHandler = async (activeStyle, number) => {
     for (let i = 0; i < navs.length; i++) {
       const nav = navs[i];
 
-      if (!nav.classList.contains(activeStyle) && nav.id == number) {
+      if (nav.id == number) {
         nav.classList.add(activeStyle);
       } else {
         nav.classList.remove(activeStyle);
