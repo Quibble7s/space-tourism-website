@@ -7,7 +7,7 @@ const NavbarImages = ({
   navbarActive = false,
 }) => {
   return (
-    <div className='px-[24px] pt-[24px] flex flex-row justify-between items-center'>
+    <div className='px-[24px] pt-[24px] flex flex-row justify-between items-center md:hidden'>
       <Image
         className='z-10'
         width={40}
