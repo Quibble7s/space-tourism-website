@@ -16,10 +16,12 @@ const Home = () => {
 
   return (
     <div
-      className={`w-full min-h-screen relative bg-cover overflow-x-hidden ${mobile} ${tablet} ${desktop}`}>
+      className={`min-h-screen relative bg-cover overflow-x-hidden ${mobile} ${tablet} ${desktop}`}>
       <Navbar navbarActive={navbarActive} setNavbarActive={setNavbarActive} />
-      <AboutSection />
-      <HomeCallToActionSection />
+      <div className='grid grid-cols-1 lg:grid-cols-2 lg:mx-[165px]'>
+        <AboutSection />
+        <HomeCallToActionSection />
+      </div>
     </div>
   );
 };
