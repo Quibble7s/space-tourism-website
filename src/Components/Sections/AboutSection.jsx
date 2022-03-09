@@ -4,7 +4,7 @@ import Text from '../Typography/Text';
 
 const AboutSection = () => {
   return (
-    <section className='mx-[24px] mt-[48px] md:mt-[106px] lg:m-0'>
+    <section className='mx-[24px] mt-[48px] md:mt-[106px] lg:m-0 lg:mt-[251px]'>
       <Heading
         type={5}
         className='uppercase text-center leading-[19.2px] md:tracking-[3.38px] md:leading-[24px] lg:tracking-[4.72px] lg:leading-[33.6px] lg:text-left'>
