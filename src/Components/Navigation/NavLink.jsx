@@ -15,9 +15,9 @@ const NavLink = ({ hidden = false, number = '', text = '', href = '' }) => {
       <a
         onClick={() => onNavClickHandler(Styles.active, number)}
         className={`flex flex-row justify-between items-center md:w-auto md:flex-col ${Styles.nav}`}>
-        <NavText className='md:mt-[39px]'>
+        <NavText className='md:mt-[36px]'>
           <span
-            className={`text-white font-bold mr-[11px] ${
+            className={`text-white font-bold mr-[12px] ${
               hidden ? 'hidden' : ''
             }`}>
             {number}
