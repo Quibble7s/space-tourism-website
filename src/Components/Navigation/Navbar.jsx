@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import MobileNavbar from './MobileNavbar';
 import NavbarImages from './MobileNavbarImages';
 import TabletNavbar from './TabletNavbar';
+import DesktopNavbar from './DesktopNavbar';
 
 const Navbar = ({ setNavbarActive = () => null, navbarActive = false }) => {
   return (
@@ -17,6 +18,8 @@ const Navbar = ({ setNavbarActive = () => null, navbarActive = false }) => {
       />
       {/*TABLET*/}
       <TabletNavbar />
+      {/*DESKTOP*/}
+      <DesktopNavbar />
     </>
   );
 };
