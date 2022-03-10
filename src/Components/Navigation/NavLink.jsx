@@ -9,17 +9,14 @@ import NavText from '../Typography/NavText';
 //Handlers
 import { onNavClickHandler } from './Handlers/NavLinkHandlers';
 
-const NavLink = ({ hidden = false, number = '', text = '', href = '' }) => {
+const NavLink = ({ numberClass = '', number = '', text = '', href = '' }) => {
   return (
     <Link href={href}>
       <a
         onClick={() => onNavClickHandler(Styles.active, number)}
         className={`flex flex-row justify-between items-center md:w-auto md:flex-col ${Styles.nav}`}>
         <NavText className='md:mt-[36px]'>
-          <span
-            className={`text-white font-bold mr-[12px] ${
-              hidden ? 'hidden' : ''
-            }`}>
+          <span className={`text-white font-bold mr-[12px] ${numberClass}`}>
             {number}
           </span>
           {text}
@@ -35,7 +32,7 @@ const NavLink = ({ hidden = false, number = '', text = '', href = '' }) => {
 };
 
 NavLink.propTypes = {
-  hidden: PropTypes.bool,
+  numberClass: PropTypes.string,
   number: PropTypes.string,
   text: PropTypes.string,
   href: PropTypes.string,
