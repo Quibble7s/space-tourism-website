@@ -56,7 +56,7 @@ const Nav = ({}) => {
           numberClass='md:hidden'
           number='01'
           text='DESTINATION'
-          href='/destination'
+          href='/destinations'
         />
         <NavLink numberClass='md:hidden' number='02' text='CREW' href='/crew' />
         <NavLink
