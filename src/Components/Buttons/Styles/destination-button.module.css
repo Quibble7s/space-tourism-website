@@ -1,0 +1,11 @@
+.button:hover > .indicator:not(.active) {
+  background-color: #979797;
+}
+
+.indicator:not(.active) {
+  background-color: transparent;
+}
+
+.active {
+  background-color: white;
+}
