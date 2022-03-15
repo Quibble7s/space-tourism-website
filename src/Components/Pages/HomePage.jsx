@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Components
-import AboutSection from '../Sections/AboutSection';
+import HomeAboutSection from '../Sections/HomeAboutSection';
 import HomeCallToActionSection from '../Sections/HomeCallToActionSection';
 import Nav from '../Navigation/Nav';
 
@@ -16,7 +16,7 @@ const Home = () => {
       className={`min-h-screen relative bg-cover overflow-x-hidden ${mobile} ${tablet} ${desktop}`}>
       <Nav />
       <div className='grid grid-cols-1 lg:grid-cols-2 lg:mx-[165px]'>
-        <AboutSection />
+        <HomeAboutSection />
         <HomeCallToActionSection />
       </div>
     </div>
