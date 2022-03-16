@@ -1,4 +1,5 @@
 import React from 'react';
+import { memo } from 'react';
 import Image from 'next/image';
 
 //Components
@@ -11,6 +12,11 @@ const Nav = ({}) => {
   //Hooks
   const [mobileNavbarActive, onBurguerClickHandler] = useOnMobileNavbar();
 
+  //Helper functions
+  const getActiveStyle = () => {
+    return mobileNavbarActive ? 'left-[calc(100%-254px)]' : 'left-full';
+  };
+
   //Main Container device CSS classes
   const mobileContainer =
     'relative px-6 pt-6 flex flex-row justify-between items-center';
@@ -20,9 +26,7 @@ const Nav = ({}) => {
     'lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-[40px] lg:pl-[55px]';
 
   //Navlinks Container device css classes
-  const mobileNav = `min-w-[254px] min-h-screen z-[5] bg-[#FFFFFF]/[0.04] backdrop-blur-[81.5485px] absolute top-0 left-${
-    mobileNavbarActive ? '[calc(100%-254px)]' : 'full'
-  } transition-all pt-[118px] pl-[32px] flex flex-col gap-[32px]`;
+  const mobileNav = `min-w-[254px] min-h-screen z-[5] bg-[#FFFFFF]/[0.04] backdrop-blur-[81.5485px] absolute top-0 ${getActiveStyle()} transition-all pt-[118px] pl-[32px] flex flex-col gap-[32px]`;
   const tabletNav =
     'md:relative md:left-0 md:min-w-[450px] md:min-h-[96px] md:pt-0 md:pl-[48px] md:flex md:flex-row md:gap-[37px]';
   const desktopNav = 'lg:p-0 lg:pl-[123px] lg:min-w-[830px] lg:gap-[48px]';
@@ -72,4 +76,4 @@ const Nav = ({}) => {
 
 Nav.propTypes = {};
 
-export default Nav;
+export default memo(Nav);
