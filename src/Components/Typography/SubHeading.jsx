@@ -5,7 +5,7 @@ const SubHeading = ({ children, type = 1, className = '' }) => {
   switch (type) {
     case 1:
       return (
-        <p className={`font-bellefair text-white md:text-[28px] ${className}`}>
+        <p className={`font-bellefair text-white text-[28px] ${className}`}>
           {children}
         </p>
       );
