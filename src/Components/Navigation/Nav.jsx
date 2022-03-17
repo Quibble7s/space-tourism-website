@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { memo } from 'react';
 import Image from 'next/image';
 
@@ -8,7 +9,7 @@ import NavLink from './NavLink';
 //Hooks
 import { useOnMobileNavbar } from '../../Hooks/Nav/useOnMobileNavbar';
 
-const Nav = ({}) => {
+const Nav = ({ currentPage = '' }) => {
   //Hooks
   const [mobileNavbarActive, onBurguerClickHandler] = useOnMobileNavbar();
 
@@ -54,26 +55,42 @@ const Nav = ({}) => {
       <div className='hidden w-full flex-row relative lg:flex'>
         <span className='min-w-[473px] min-h-[1px] mx-auto bg-white/25 absolute left-[calc(100%-calc(473px-64px))] z-10'></span>
       </div>
-      <div className={`${mobileNav} ${tabletNav} ${desktopNav}`}>
-        <NavLink numberClass='md:hidden' number='00' text='HOME' href='/' />
+      <nav className={`${mobileNav} ${tabletNav} ${desktopNav}`}>
         <NavLink
-          numberClass='md:hidden'
+          numberClass='md:hidden lg:inline-block'
+          number='00'
+          text='HOME'
+          href='/'
+          active={currentPage === 'home'}
+        />
+        <NavLink
+          numberClass='md:hidden lg:inline-block'
           number='01'
           text='DESTINATION'
           href='/destinations'
+          active={currentPage === 'destination'}
         />
-        <NavLink numberClass='md:hidden' number='02' text='CREW' href='/crew' />
         <NavLink
-          numberClass='md:hidden'
+          numberClass='md:hidden lg:inline-block'
+          number='02'
+          text='CREW'
+          href='/crew'
+          active={currentPage === 'crew'}
+        />
+        <NavLink
+          numberClass='md:hidden lg:inline-block'
           number='03'
           text='TECHNOLOGY'
           href='/technology'
+          active={currentPage === 'technology'}
         />
-      </div>
+      </nav>
     </div>
   );
 };
 
-Nav.propTypes = {};
+Nav.propTypes = {
+  currentPage: PropTypes.string,
+};
 
 export default memo(Nav);
