@@ -41,7 +41,7 @@ const DestinationsPage = () => {
   return (
     <section
       className={`w-full min-h-screen bg-cover overflow-x-hidden ${mobileContainer} ${tabletContainer} ${desktopContainer}`}>
-      <Nav />
+      <Nav currentPage='destination' />
       <div className='mx-[24px] md:ml-[39px] lg:ml-[166.5px] lg:grid lg:grid-cols-2'>
         <div>
           <Heading
@@ -76,7 +76,7 @@ const DestinationsPage = () => {
             className='text-center leading-[64.18px] mt-[20px] md:mt-[32px] md:leading-[92px] lg:text-left lg:leading-[114.6px] lg:mt-[37px]'>
             {selectedBody?.toUpperCase()}
           </Heading>
-          <Text className='text-center text-light-purple md:max-w-[573px] md:min-h-[84px] md:mx-auto md:mt-[8px] lg:mt-[14px] lg:min-h-[128px] lg:text-left'>
+          <Text className='text-center text-light-purple min-h-[125px] md:max-w-[573px] md:min-h-[84px] md:mx-auto md:mt-[8px] lg:mt-[14px] lg:min-h-[128px] lg:text-left'>
             {data[0]?.description}
           </Text>
           <span className='block w-full min-h-[1px] bg-[#383B4B] mt-[32px] md:mt-[49px] lg:mt-[54px]' />
