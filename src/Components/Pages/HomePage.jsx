@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div
       className={`min-h-screen relative bg-cover overflow-x-hidden ${mobile} ${tablet} ${desktop}`}>
-      <Nav />
+      <Nav currentPage='home' />
       <div className='grid grid-cols-1 lg:grid-cols-2 lg:mx-[165px]'>
         <HomeAboutSection />
         <HomeCallToActionSection />
