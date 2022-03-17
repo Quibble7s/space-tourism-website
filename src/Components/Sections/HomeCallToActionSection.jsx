@@ -4,7 +4,7 @@ import Router from 'next/router';
 import Heading from '../Typography/Heading';
 
 //Styles
-import Styles from '../../../styles/home-call-to-action.module.css';
+import Styles from './Styles/home-call-to-action.module.css';
 
 const HomeCallToActionSection = () => {
   return (
