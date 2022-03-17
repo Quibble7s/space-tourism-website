@@ -18,7 +18,7 @@ const DestinationButton = ({
       onClick={onClick}
       className={`cursor-pointer ${Styles.button}`}
       {...rest}>
-      <NavText className='tracking-[2.36px] leading-[16.8px] pointer-events-none'>
+      <NavText className='tracking-[2.36px] leading-[16.8px] pointer-events-none md:text-[16px]'>
         {children}
       </NavText>
       <div
