@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Image from 'next/image';
 
 //Components
@@ -6,20 +6,26 @@ import Nav from '../Navigation/Nav';
 import Heading from '../Typography/Heading';
 import Text from '../Typography/Text';
 import SubHeading from '../Typography/SubHeading';
-
-//Data
-import destinationData from '../../Data/data.json';
 import DestinationButton from '../Buttons/DestinationButton';
 
+//Contexts
+import { DataContext } from '../../Contexts/DataContex';
+
 const DestinationsPage = () => {
+  //Context data
+  const contextData = useContext(DataContext);
+
   //Destinations
   const destinations = ['moon', 'mars', 'europa', 'titan'];
 
   //Hooks
   const [selectedBody, setSelectedBody] = useState('moon');
-  const data = destinationData.destinations.filter(
+  const data = contextData.destinations.filter(
     (val) => val.name.toLowerCase() === selectedBody,
   );
+  const onDestinationClickHandler = (e) => {
+    setSelectedBody(e.target.name);
+  };
 
   //Main Container Backgrounds
   const mobileContainer =
@@ -28,10 +34,6 @@ const DestinationsPage = () => {
     ' md:bg-[url("/assets/destination/background-destination-tablet.jpg")]';
   const desktopContainer =
     ' md:bg-[url("/assets/destination/background-destination-desktop.jpg")]';
-
-  const onDestinationClickHandler = (e) => {
-    setSelectedBody(e.target.name);
-  };
 
   //Helpers
   const fadeInOnLoad = (e) => {
