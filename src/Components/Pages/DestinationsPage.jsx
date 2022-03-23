@@ -10,6 +10,7 @@ import DestinationButton from '../Buttons/DestinationButton';
 
 //Contexts
 import { DataContext } from '../../Contexts/DataContex';
+import PageTitleSection from '../Sections/PageTitleSection';
 
 const DestinationsPage = () => {
   //Context data
@@ -46,12 +47,7 @@ const DestinationsPage = () => {
       <Nav currentPage='destination' />
       <div className='mx-[24px] md:ml-[39px] lg:ml-[166.5px] lg:grid lg:grid-cols-2'>
         <div>
-          <Heading
-            type={5}
-            className='text-center text-[#FFF] leading-[19.2px] mt-[24px] md:text-left md:mt-[40px] md:tracking-[3.38px] md:leading-[24px] lg:mt-[76px]'>
-            <span className='mr-[18px] text-white/25'>01</span> PICK YOUR
-            DESTINATION
-          </Heading>
+          <PageTitleSection number='01' title='PICK YOUR DESTINATION' />
           <div className='max-w-[170px] max-h-[170px] mx-auto mt-[32px] md:max-w-[300px] md:max-h-[300px] md:mt-[60px] lg:mt-[97px] lg:max-w-[445px] lg:max-h-[445px] lg:mx-0 lg:ml-[63.5px]'>
             <Image
               className='transition-opacity duration-200 opacity-0'
