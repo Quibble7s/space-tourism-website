@@ -1,0 +1,12 @@
+.idle {
+  background-color: white;
+  opacity: 0.17;
+}
+
+.active {
+  opacity: 1;
+}
+
+.idle:hover:not(.active) {
+  opacity: 0.5;
+}

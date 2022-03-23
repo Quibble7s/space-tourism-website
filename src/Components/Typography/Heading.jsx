@@ -19,8 +19,7 @@ const Heading = ({ children, type = 1, className = '' }) => {
       );
     case 3:
       return (
-        <h3
-          className={`font-bellefair text-[80px] md:text-[56px] text-white ${className}`}>
+        <h3 className={`font-bellefair lg:text-[56px] text-white ${className}`}>
           {children}
         </h3>
       );
