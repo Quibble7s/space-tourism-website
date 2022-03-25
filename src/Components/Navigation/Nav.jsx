@@ -44,6 +44,7 @@ const Nav = ({ currentPage = '' }) => {
         onClick={onBurguerClickHandler}
         className='min-w-[24px] min-h-[21px] z-10 md:hidden'>
         <Image
+          alt='menu'
           width={mobileNavbarActive ? 19.09 : 24}
           height={mobileNavbarActive ? 19.09 : 21}
           objectFit='contain'
