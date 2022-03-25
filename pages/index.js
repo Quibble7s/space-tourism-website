@@ -6,13 +6,22 @@ export default function Home() {
     <main>
       <Head>
         <title>Space Tourism Agency | Home</title>
+        <meta name='title' content='Space Tourism Agency | Home' />
         <meta name='description' content='So, you want to travel to space?' />
-        <meta itemProp='name' content='Space Tourism Agency | Home' />
         <meta
-          itemProp='description'
-          content='So, you want to travel to space?'
+          name='keywords'
+          content='Space,Travel,Mars,Earth,Space Travel,Planet,Moon'
         />
-        <meta itemProp='image' content='/assets/shared/home-screenshot.jpg' />
+        <meta name='robots' content='index, follow' />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='language' content='English' />
+        <meta name='revisit-after' content='7 days' />
+        <meta name='author' content='Cesar Gallardo' />
+        <meta
+          property='og:image'
+          content='/assets/shared/home-screenshot.jpg'
+        />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <HomePage />
     </main>

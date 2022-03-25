@@ -9,17 +9,22 @@ const Destinations = () => {
     <>
       <Head>
         <title>Space Tourism Agency | Destinations</title>
+        <meta name='title' content='Space Tourism Agency | Destinations' />
         <meta
           name='description'
           content='These are the destinations you can visit with us!'
         />
-        <meta itemProp='name' content='Space Tourism Agency | Destinations' />
         <meta
-          itemProp='description'
-          content='These are the destinations you can visit with us!'
+          name='keywords'
+          content='Space,Travel,Mars,Earth,Space Travel,Planet,Moon'
         />
+        <meta name='robots' content='index, follow' />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='language' content='English' />
+        <meta name='revisit-after' content='7 days' />
+        <meta name='author' content='Cesar Gallardo' />
         <meta
-          itemProp='image'
+          property='og:image'
           content='/assets/shared/destinations-screenshot.jpg'
         />
         <link rel='icon' href='/favicon.ico' />

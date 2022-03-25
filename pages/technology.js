@@ -7,17 +7,22 @@ const Technology = () => {
     <>
       <Head>
         <title>Space Tourism Agency | Technology</title>
+        <meta name='title' content='Space Tourism Agency | Technology' />
         <meta
           name='description'
           content='Check the thechnology that we use to make space travel posible!'
         />
-        <meta itemProp='name' content='Space Tourism Agency | Technology' />
         <meta
-          itemProp='description'
-          content='Check the thechnology that we use to make space travel posible!'
+          name='keywords'
+          content='Space,Travel,Mars,Earth,Space Travel,Planet,Moon'
         />
+        <meta name='robots' content='index, follow' />
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='language' content='English' />
+        <meta name='revisit-after' content='7 days' />
+        <meta name='author' content='Cesar Gallardo' />
         <meta
-          itemProp='image'
+          property='og:image'
           content='/assets/shared/technology-screenshot.jpg'
         />
         <link rel='icon' href='/favicon.ico' />
