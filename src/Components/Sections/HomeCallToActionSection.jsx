@@ -12,7 +12,7 @@ const HomeCallToActionSection = () => {
       className={`mx-[24px] mt-[81px] md:mt-[156px] lg:m-0 lg:flex lg:flex-col lg:justify-end lg:items-end`}>
       <div
         onClick={() => {
-          Router.push('/destination');
+          Router.push('/destinations');
         }}
         className={`${Styles.action} z-[2] relative cursor-pointer mx-auto w-full max-w-[150px] min-h-[150px] md:max-w-[242px] md:min-h-[242px] lg:max-w-[274px] lg:min-h-[274px] bg-white rounded-[50%] lg:mx-0`}>
         <Heading
