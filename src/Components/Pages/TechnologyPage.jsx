@@ -63,6 +63,7 @@ const TechnologyPage = () => {
         <div className='mt-[32px] min-w-full md:mt-[60px] lg:hidden'>
           <div className='flex flex-row justify-center'>
             <Image
+              alt=''
               src={data[selectedTechnology].images.landscape.replace('.', '')}
               width={768}
               height={309}
@@ -72,6 +73,7 @@ const TechnologyPage = () => {
         </div>
         <div className='hidden mt-[36px] text-right lg:inline-block lg:min-w-[515px]'>
           <Image
+            alt=''
             src={data[selectedTechnology].images.portrait.replace('.', '')}
             width={515}
             height={527}

@@ -50,6 +50,7 @@ const DestinationsPage = () => {
           <PageTitleSection number='01' title='PICK YOUR DESTINATION' />
           <div className='max-w-[170px] max-h-[170px] mx-auto mt-[32px] md:max-w-[300px] md:max-h-[300px] md:mt-[60px] lg:mt-[97px] lg:max-w-[445px] lg:max-h-[445px] lg:mx-0 lg:ml-[63.5px]'>
             <Image
+              alt=''
               className='transition-opacity duration-200 opacity-0'
               onLoad={fadeInOnLoad}
               width={445}

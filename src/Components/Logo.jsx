@@ -6,6 +6,7 @@ const Logo = ({ width = 0, height = 0, className = '' }) => {
   return (
     <div className={className}>
       <Image
+        alt='logo'
         width={width}
         height={height}
         objectFit='contain'

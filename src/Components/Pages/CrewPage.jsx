@@ -61,6 +61,7 @@ const CrewPage = () => {
               <div
                 className={`${crewImageSizes.mobile[selectedIndex][0]} ${crewImageSizes.mobile[selectedIndex][1]} ${crewImageSizes.tablet[selectedIndex][0]} ${crewImageSizes.tablet[selectedIndex][1]} ${crewImageSizes.desktop[selectedIndex][0]} ${crewImageSizes.desktop[selectedIndex][1]} mx-auto flex flex-col justify-items-end transition-all lg:absolute lg:bottom-0 lg:left-[50%]`}>
                 <Image
+                  alt=''
                   width={568.07}
                   height={712}
                   objectFit='contain'
