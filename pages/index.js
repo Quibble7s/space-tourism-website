@@ -7,12 +7,12 @@ export default function Home() {
       <Head>
         <title>Space Tourism Agency | Home</title>
         <meta name='description' content='So, you want to travel to space?' />
-        <meta itemprop='name' content='Space Tourism Agency | Home' />
+        <meta itemProp='name' content='Space Tourism Agency | Home' />
         <meta
-          itemprop='description'
+          itemProp='description'
           content='So, you want to travel to space?'
         />
-        <meta itemprop='image' content='/assets/shared/home-screenshot.jpg' />
+        <meta itemProp='image' content='/assets/shared/home-screenshot.jpg' />
       </Head>
       <HomePage />
     </main>

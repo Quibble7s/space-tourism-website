@@ -11,13 +11,13 @@ const Technology = () => {
           name='description'
           content='Check the thechnology that we use to make space travel posible!'
         />
-        <meta itemprop='name' content='Space Tourism Agency | Technology' />
+        <meta itemProp='name' content='Space Tourism Agency | Technology' />
         <meta
-          itemprop='description'
+          itemProp='description'
           content='Check the thechnology that we use to make space travel posible!'
         />
         <meta
-          itemprop='image'
+          itemProp='image'
           content='/assets/shared/technology-screenshot.jpg'
         />
         <link rel='icon' href='/favicon.ico' />

@@ -11,12 +11,12 @@ const Crew = () => {
           name='description'
           content='This is the crew that will accompany you throughout your trip!'
         />
-        <meta itemprop='name' content='Space Tourism Agency | Crew' />
+        <meta itemProp='name' content='Space Tourism Agency | Crew' />
         <meta
-          itemprop='description'
+          itemProp='description'
           content='This is the crew that will accompany you throughout your trip!'
         />
-        <meta itemprop='image' content='/assets/shared/crew-screenshot.jpg' />
+        <meta itemProp='image' content='/assets/shared/crew-screenshot.jpg' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <CrewPage />

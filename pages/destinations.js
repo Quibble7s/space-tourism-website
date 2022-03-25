@@ -13,13 +13,13 @@ const Destinations = () => {
           name='description'
           content='These are the destinations you can visit with us!'
         />
-        <meta itemprop='name' content='Space Tourism Agency | Destinations' />
+        <meta itemProp='name' content='Space Tourism Agency | Destinations' />
         <meta
-          itemprop='description'
+          itemProp='description'
           content='These are the destinations you can visit with us!'
         />
         <meta
-          itemprop='image'
+          itemProp='image'
           content='/assets/shared/destinations-screenshot.jpg'
         />
         <link rel='icon' href='/favicon.ico' />
