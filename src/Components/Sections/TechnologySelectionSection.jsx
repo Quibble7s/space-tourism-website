@@ -10,6 +10,7 @@ const TechnologySelectionSection = ({
     <div className='flex flex-row justify-center items-center gap-[16px] mt-[34px] md:mt-[56px] lg:flex-col lg:justify-start lg:mt-[137px] lg:gap-[32px]'>
       {[0, 1, 2].map((index) => (
         <TechnologySelectionButton
+          key={`${index}-tech`}
           onTechnologySelectionHandler={onTechnologySelectionHandler}
           selectedTech={selectedTech}
           number={(index + 1).toString()}

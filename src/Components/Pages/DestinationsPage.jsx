@@ -62,6 +62,7 @@ const DestinationsPage = () => {
           <div className='mt-[26px] flex flex-row justify-center items-center gap-[26.5px] md:mt-[53px] lg:mt-[174px] lg:justify-start'>
             {destinations.map((destination) => (
               <DestinationButton
+                key={destination}
                 onClick={onDestinationClickHandler}
                 selectedDestination={selectedBody}
                 name={destination}>
