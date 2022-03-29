@@ -6,6 +6,8 @@ import Image from 'next/image';
 //Components
 import Logo from '../Logo';
 import NavLink from './NavLink';
+//Styles
+import Styles from './Styles/nav.module.css';
 //Hooks
 import { useOnMobileNavbar } from '../../Hooks/Nav/useOnMobileNavbar';
 
@@ -27,7 +29,9 @@ const Nav = ({ currentPage = '' }) => {
     'lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-[40px] lg:pl-[55px]';
 
   //Navlinks Container device css classes
-  const mobileNav = `min-w-[254px] min-h-screen z-[5] bg-[#FFFFFF]/[0.04] backdrop-blur-[81.5485px] absolute top-0 ${getActiveStyle()} transition-all pt-[118px] pl-[32px] flex flex-col gap-[32px]`;
+  const mobileNav = `min-w-[254px] min-h-screen z-[5] ${
+    Styles.nav
+  } absolute top-0 ${getActiveStyle()} transition-all pt-[118px] pl-[32px] flex flex-col gap-[32px]`;
   const tabletNav =
     'md:relative md:left-0 md:min-w-[450px] md:min-h-[96px] md:pt-0 md:pl-[48px] md:flex md:flex-row md:gap-[37px]';
   const desktopNav = 'lg:p-0 lg:pl-[123px] lg:min-w-[830px] lg:gap-[48px]';

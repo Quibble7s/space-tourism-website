@@ -1,0 +1,10 @@
+.nav {
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+}
+
+@supports not (backdrop-filter: blur(81.5485px)) {
+  .nav {
+    background-color: rgba(41, 41, 41, 0.95);
+  }
+}
